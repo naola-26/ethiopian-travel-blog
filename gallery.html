@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoHabesha - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="Images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="Images/favicon/site.webmanifest">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="GoHabesha home">
+        <img src="Images/favicon/favicon.png" alt="GoHabesha logo" class="logo" />
+        <span class="brand-title">GoHabesha</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          ☰
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<main class="container main-content">
+
+  <section class="section" aria-labelledby="gallery-heading">
+    <h1 id="gallery-heading">Photo Gallery</h1>
+    <p class="lead">Snapshots of the travels across Ethiopia. Click any image to view it larger.</p>
+
+    <!-- Location Filter Buttons -->
+    <div class="gallery-filters" role="group" aria-label="Filter images by location">
+      <button class="filter-btn active" data-location="all" aria-pressed="true">All Locations</button>
+      <button class="filter-btn" data-location="Addis Ababa" aria-pressed="false">Addis Ababa</button>
+      <button class="filter-btn" data-location="Lalibela" aria-pressed="false">Lalibela</button>
+      <button class="filter-btn" data-location="Gondar" aria-pressed="false">Gondar</button>
+      <button class="filter-btn" data-location="Axum" aria-pressed="false">Axum</button>
+      <button class="filter-btn" data-location="Hawassa" aria-pressed="false">Hawassa</button>
+      <button class="filter-btn" data-location="Bale" aria-pressed="false">Bale</button>
+    </div>
+
+    <!-- Dynamic Gallery Grid -->
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Images will be dynamically inserted here -->
+    </div>
+  </section>
+
+</main>
+
+ <!-- Lightbox for full-size images -->
+ <div id="lightbox" class="lightbox hidden">
+  <span id="close-lightbox" class="close-lightbox" aria-label="Close lightbox">&times;</span>
+  <img id="lightbox-img" src="" alt="Full size image" />
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> GoHabesha - Gallery. </p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

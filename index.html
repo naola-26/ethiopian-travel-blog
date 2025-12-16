@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoHabesha - Travel Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="Images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="Images/favicon/site.webmanifest">
+
+</head>
+<body>
+
+  <!-- site header -->
+
+  <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="GoHabesha home">
+          <img src="Images/favicon/favicon.png" alt="GoHabesha logo" class="logo" />
+          <span class="brand-title">GoHabesha</span>
+        </a>
+  
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+            ☰
+          </button>
+          <ul id="nav-list" class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <!-- hero section -->
+
+  <section class="hero" role="region" aria-label="Featured">
+    <div class="hero-overlay">
+      <div class="container hero-inner">
+        <h1>Chill Trips, Messy Stories, Actual Tips</h1>
+        <p class="hero-sub">
+          Curated Routes, Cost-Effective Travel, and Essential Tips for Exploring Ethiopia
+        </p>
+        <p>
+          <a href="blog.html" class="btn primary">Read the latest</a>
+          <a href="destinations.html" class="btn ghost">Explore destinations</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- featured destinations -->
+
+  <main class="container main-content">
+    <section class="section featured" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Popular Destinations</h2>
+
+      <div class="cards" id="featured-cards">
+        <!-- card 1 -->
+        <article class="card" data-destination="addis">
+          <img src="Images/addis/addis_main.jpg" class="img-border-radius" alt="City skyline of Addis Ababa" />
+          <div class="card-body">
+            <h3>Addis Ababa</h3>
+            <p>Coffee culture, museums, and vibrant views of the capital city.</p>
+            <a href="destinations.html#addis" class="btn small">See details</a>
+          </div>
+        </article>
+
+        <!-- card 2 -->
+        <article class="card" data-destination="lalibela">
+          <img src="Images/lalibela/lalibela_main.jpg" class="img-border-radius"  alt="Rock-hewn churches of Lalibela" />
+          <div class="card-body">
+            <h3>Lalibela</h3>
+            <p>Ancient rock-hewn churches, spiritual heritage, and breathtaking architecture.</p>
+            <a href="destinations.html#lalibela" class="btn small">See details</a>
+          </div>
+        </article>
+
+        <!-- card 3 -->
+        <article class="card" data-destination="gondar">
+          <img src="Images/gondar/gondar_main.jpg" class="img-border-radius"  alt="Fasil Ghebbi castle complex in Gondar" />
+          <div class="card-body"> 
+            <h3>Gondar</h3>
+            <p>Historic castles, royal enclosures, and the Camelot of Africa.</p>
+            <a href="destinations.html#gondar" class="btn small">See details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  <!-- latest posts teasers -->
+
+    <section class="section posts" aria-labelledby="latest-heading">
+    <h2 id="latest-heading">Latest posts</h2>
+
+    <div class="post-list">
+      <article class="post-teaser">
+        <h3>A Complete Guide to Ethiopian Coffee Ceremony</h3>
+        <time datetime="2025-11-28">Nov 28, 2025</time>
+        <p class="teaser-text">
+          Experience the authentic Ethiopian coffee ceremony - from roasting beans to the third cup. 
+          Learn where to find the best traditional coffee houses in Addis Ababa and what to expect during this sacred ritual.
+        </p>
+        <button class="btn inline read-more" data-target="post-1">Read more</button>
+
+        <!-- hidden full content, JS will toggle -->
+        <div id="post-1" class="full-post visually-hidden">
+          <p>
+            Ethiopia is the birthplace of coffee, and experiencing a traditional coffee ceremony is one of the most authentic cultural experiences you can have in the country. The ceremony is not just about drinking coffee—it's a social ritual that brings people together, often lasting over an hour.
+          </p><br>
+          <p>
+            <strong>The Process:</strong> The ceremony begins with the hostess (usually a woman) washing green coffee beans, then roasting them over a small charcoal stove. The aroma fills the room as she waves the roasting pan (መጥበሻ) to share the fragrance with guests. After roasting, the beans are ground using a mortar and pestle, then brewed in a traditional clay pot called a jebena (ጀበና).
+          </p><br>
+          <p>
+            <strong>The Three Cups:</strong> Coffee is served in three rounds, each with its own name and meaning:
+          </p>
+          <ul>
+            <li><strong>አቦል (Abol):</strong> The first cup, the strongest and most important</li>
+            <li><strong>ቶና (Tona):</strong> The second cup, slightly weaker</li>
+            <li><strong>በረካ (Bereka):</strong> The third cup, a blessing</li>
+          </ul><br>
+          <p>
+            <strong>Where to Experience It:</strong> In Addis Ababa, head to Tomoca Coffee (the oldest coffee shop in the city), Kaldi's Coffee, or visit a local home where you'll get the most authentic experience. Many hotels and cultural restaurants also offer coffee ceremonies, but nothing beats the real deal in someone's home.
+          </p>
+          <p>
+            <strong>What to Know:</strong> The ceremony is accompanied by burning frankincense (ዕጣን), and you'll be served popcorn (ፈንዲሻ) or roasted barley (ቆሎ) as snacks. It's polite to accept all three cups, and don't rush—this is about connection, not caffeine.
+          </p>
+        </div>
+      </article>
+
+      <article class="post-teaser">
+        <h3>Visiting Lalibela: Tips for Exploring the Rock-Hewn Churches</h3>
+        <time datetime="2025-10-10">Oct 10, 2025</time>
+        <p class="teaser-text">
+          Planning your trip to Lalibela (ላሊበላ)? Here's everything you need to know about visiting these UNESCO World Heritage sites, from best times to visit to what to wear and how to respect the sacred spaces.
+        </p>
+        <button class="btn inline read-more" data-target="post-2">Read more</button>
+
+        <div id="post-2" class="full-post visually-hidden">
+          <p>
+            Lalibela (ላሊበላ) is home to 11 monolithic rock-hewn churches, carved out of solid rock in the 12th and 13th centuries. This UNESCO World Heritage site is one of Ethiopia's most sacred places and a must-visit destination. Here's your complete guide to making the most of your visit.
+          </p><br>
+          <p>
+            <strong>Best Time to Visit:</strong> The dry season (October to March) is ideal, with clear skies and comfortable temperatures. Avoid the rainy season (June to September) when paths can be slippery. If you can, visit during Ethiopian Orthodox holidays like Timkat (Epiphany) or Meskel (Finding of the True Cross) for an unforgettable cultural experience, though expect larger crowds.
+          </p>
+          <p>
+            <strong>What to Wear:</strong> This is a religious site, so dress modestly. Women should cover their shoulders and wear skirts or pants below the knee. Men should avoid shorts. You'll need comfortable, sturdy shoes with good grip—you'll be walking on uneven stone surfaces and climbing narrow passages.
+          </p>
+          <p>
+            <strong>The Churches:</strong> The churches are divided into two groups connected by a small stream called the River Jordan. The Northern Group includes Bete Medhane Alem (the largest monolithic church in the world), Bete Maryam, and Bete Golgotha. The Eastern Group features Bete Amanuel and Bete Abba Libanos. Don't miss the iconic Bete Giyorgis (St. George's Church), carved in the shape of a cross.
+          </p><br>
+          <p>
+            <strong>Practical Tips:</strong>
+          </p>
+          <ul>
+            <li>Hire a local guide—they provide invaluable context and help you navigate the complex</li>
+            <li>Start early in the morning to avoid crowds and the midday heat</li>
+            <li>Bring a headlamp or flashlight—some churches have dark, narrow tunnels</li>
+            <li>Respect the priests and pilgrims—this is an active place of worship</li>
+            <li>Photography is usually allowed, but ask permission before photographing people</li>
+            <li>Altitude is around 2,500 meters—take it slow if you're not acclimated</li>
+          </ul><br>
+          <p>
+            <strong>Getting There:</strong> Fly from Addis Ababa to Lalibela Airport (about 1.5 hours), or take a bus from Addis (12+ hours, not recommended). The town is small and walkable, with most hotels within walking distance of the churches.
+          </p>
+          <p>
+            <strong>Cultural Respect:</strong> Remember, these aren't just tourist attractions—they're living places of worship. Remove your shoes when entering churches, speak quietly, and follow your guide's instructions. The experience is truly humbling when you witness the devotion of local pilgrims who travel great distances to pray here.
+          </p>
+        </div>
+      </article>
+    </div>
+    </section>
+
+  <!-- newsletter / subscribe simple UI -->
+
+    <aside class="section subscribe" aria-labelledby="subscribe-heading">
+    <h2 id="subscribe-heading">Subscribe for weekly travel tips</h2>
+    <form id="subscribe-form" class="subscribe-form" novalidate>
+      <label for="sub-email">Email</label>
+      <input id="sub-email" name="email" type="email" required placeholder="you@example.com" />
+      <button type="submit" class="btn primary">Subscribe</button>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>
+    </aside>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> GoHabesha. </p>
+    </div>
+  </footer>
+
+  <!-- script -->
+
+  <script src="script.js" defer></script>
+</body>
+</html>
