@@ -239,6 +239,8 @@ img {
   background: var(--primary);
   color: rgb(255, 255, 255);
   box-shadow: var(--shadow);
+  margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 .btn.primary:hover {
