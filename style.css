@@ -63,6 +63,7 @@ img {
   padding: 25px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -440,6 +441,11 @@ img {
 /* ---------------------------------------
    TABLES
 ---------------------------------------- */
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
 .info-table,
 .compare-table {
   width: 100%;
@@ -775,9 +781,8 @@ img {
 }
 
 .gallery-grid {
-  display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  column-count: 2;
+  column-gap: 18px;
 }
 
 .gallery-img {
@@ -788,6 +793,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  break-inside: avoid;
+  margin-bottom: 18px;
 }
 
 .gallery-img:hover {
